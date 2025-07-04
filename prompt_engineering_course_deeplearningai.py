@@ -119,12 +119,11 @@ while True:
   print("GPT: reply")
   history.append({"role": "user", "content": "reply"})
 
+#Building an order bot
 !pip install jupyter_bokeh
-
 import panel as pn
 pn.extension()    # ← this MUST run before you define or display any Panel objects
 
-# Building an order bot
 # 1) shared history
 history = [{"role": "system", "content": """You are OrderBot, an automated service to collect orders for a pizza restaurant.\
 You first greet the customer, then collects the order, \
