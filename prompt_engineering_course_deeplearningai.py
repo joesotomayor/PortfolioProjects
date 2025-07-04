@@ -191,6 +191,8 @@ dashboard = pn.Column(
 
 dashboard # ← display inline in the notebook
 
+# Get a summary of your order
+
 # 1) Copy your conversation so far
 summary_messages = history.copy()
 
